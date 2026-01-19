@@ -35,3 +35,4 @@ public class Rogue extends Character{
 		System.out.println(random + "의 피해를 입혔습니다.");
 		showStatus();
 	}
+}

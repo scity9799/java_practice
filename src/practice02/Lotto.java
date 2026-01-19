@@ -32,7 +32,7 @@ public class Lotto {
 		}
 		
 		for(int l : lotto) {
-			System.out.println(l);
+			System.out.print(l + "\t");
 		}
 		
 	}
