@@ -7,35 +7,21 @@ public class Tree01 {
 
         for (int i = 1; i <= height; i++) {
 
-            // ① 앞쪽 공백
-            for (int j = 1; j <= (height - i) * 2; j++) {
+            // 앞쪽 공백 출력
+            for (int s = 0; s < (height - i) * 2; s++) {
                 System.out.print(" ");
             }
 
-            // ② 별 출력 (홀수 개)
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                System.out.print("* ");
-            }
-
-            System.out.println();
-        }
-        
-        int height1 = 4;
-        int width = 2 * height1 - 1;
-        int center = height1;
-
-        for (int i = 1; i <= height1; i++) {          // 행
-            for (int j = 1; j <= width; j++) {       // 열
-
-                if (Math.abs(j - center) <= 2 * (i - 1) && (j - center) % 2 == 0){
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
+            // 별 출력
+            for (int star = 1; star <= i; star++) {
+                System.out.print("*");
+                if (star < i) {
+//                    System.out.print("   "); // 별 사이 간격
                 }
-
             }
+
+            // 줄 바꿈
             System.out.println();
         }
-    
 	}
 }
